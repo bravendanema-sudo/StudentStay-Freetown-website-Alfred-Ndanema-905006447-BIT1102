@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- StudentStay Freetown | Accommodation Details and Booking | HTML and CSS only (no JavaScript) -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Accommodation Details and Booking | StudentStay Freetown</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Header: logo and main menu -->
+    <header>
+      <div class="w">
+        <a class="logo" href="index.html">Student<b>Stay</b></a>
+        <!-- Main menu (the current page is highlighted in yellow) -->
+        <nav aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="accommodation.html" class="on" aria-current="page">Accommodation Listing</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="account.html">Student Account</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Main content of the page -->
+    <main>
+      <!-- Banner: Accommodation Details &amp; Booking -->
+      <div class="hero">
+        <div class="w">
+          <h1>Accommodation Details &amp; Booking</h1>
+        </div>
+      </div>
+      <!-- Section: Single Room -->
+      <section>
+        <div class="w split top">
+          <div>
+            <img src="images/single.jpg" alt="Single room">
+            <h2 style="margin-top:18px">Single Room</h2>
+            <p style="margin:0 0 10px;color:var(--mut)">Near University, Freetown &middot; <b>Le 1,500,000 / month</b></p>
+            <table>
+              <tr>
+                <td>Room Type</td>
+                <td>Single Room</td>
+              </tr>
+              <tr>
+                <td>Location</td>
+                <td>Near University, Freetown</td>
+              </tr>
+              <tr>
+                <td>Facilities</td>
+                <td>Wi-Fi, electricity, water, laundry, shared kitchen</td>
+              </tr>
+              <tr>
+                <td>Security</td>
+                <td>24/7 security</td>
+              </tr>
+              <tr>
+                <td>Distance to University</td>
+                <td>5 minutes (walking)</td>
+              </tr>
+              <tr>
+                <td>Landlord / Contact</td>
+                <td>Mr. John Doe, +232 76 111 222</td>
+              </tr>
+            </table>
+          </div>
+          <!-- Form (the Send button opens the email app, no JavaScript needed) -->
+          <form class="box" id="booking" action="mailto:info@studentaccom.sl" method="post" enctype="text/plain">
+            <h2 style="margin:0">Booking Summary</h2>
+            <table>
+              <tr>
+                <td>Room Type</td>
+                <td>Single Room</td>
+              </tr>
+              <tr>
+                <td>Location</td>
+                <td>Near University</td>
+              </tr>
+              <tr>
+                <td>Monthly Rent</td>
+                <td>Le 1,500,000</td>
+              </tr>
+            </table>
+            <label for="n">Full Name</label>
+            <input id="n" name="name" required>
+            <label for="e">Email Address</label>
+            <input id="e" name="email" type="email" required>
+            <label for="ci">Check-in Date</label>
+            <input id="ci" name="checkin" type="date" required>
+            <label for="co">Check-out Date</label>
+            <input id="co" name="checkout" type="date" required>
+            <p style="margin-top:14px"><button class="btn" type="submit" style="width:100%">Request Booking</button></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer: quick links, about, contact and social links -->
+    <footer>
+      <div class="w">
+        <div class="fg4">
+          <div>
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="accommodation.html">Accommodation Listing</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="account.html">Student Account</a>
+          </div>
+          <div>
+            <h4>About</h4>
+            <a href="about.html">Our Story</a>
+            <a href="details.html">Accommodation Details</a>
+            <a href="details.html#booking">Request Booking</a>
+            <a href="contact.html#map">Location &amp; Map</a>
+            <a href="contact.html#faqs">FAQs</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <p>Phone: +232 76 123 456</p>
+            <p>Email: info@studentaccom.sl</p>
+            <p>12 University Road, Freetown, Sierra Leone</p>
+            <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+          </div>
+          <div>
+            <h4>Social Link</h4>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">Instagram</a>
+            <a href="#">X</a>
+          </div>
+        </div>
+        <p class="copy">&copy; 2026 StudentStay Freetown &middot; Student project prototype. Sample images are for illustration only.</p>
+      </div>
+    </footer>
+  </body>
+</html>

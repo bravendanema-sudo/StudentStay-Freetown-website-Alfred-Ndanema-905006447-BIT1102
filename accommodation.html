@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- StudentStay Freetown | Accommodation Listing | HTML and CSS only (no JavaScript) -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Accommodation Listing | StudentStay Freetown</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Header: logo and main menu -->
+    <header>
+      <div class="w">
+        <a class="logo" href="index.html">Student<b>Stay</b></a>
+        <!-- Main menu (the current page is highlighted in yellow) -->
+        <nav aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="accommodation.html" class="on" aria-current="page">Accommodation Listing</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="account.html">Student Account</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Main content of the page -->
+    <main>
+      <!-- Banner: Accommodation Listings -->
+      <div class="hero">
+        <div class="w">
+          <h1>Accommodation Listings</h1>
+        </div>
+      </div>
+      <!-- Section: content -->
+      <section>
+        <div class="w">
+          <input type="radio" name="f" id="t0" checked>
+          <input type="radio" name="f" id="t1">
+          <input type="radio" name="f" id="t2">
+          <input type="radio" name="f" id="t3">
+          <input type="radio" name="f" id="t4">
+          <input type="radio" name="p" id="p0" checked>
+          <input type="radio" name="p" id="p1">
+          <input type="radio" name="p" id="p2">
+          <input type="radio" name="p" id="p3">
+          <input type="radio" name="l" id="l0" checked>
+          <input type="radio" name="l" id="l1">
+          <div class="fl" role="group" aria-label="Location">
+            <span class="fh">Location</span>
+            <label for="l0">All</label>
+            <label for="l1">Near University</label>
+          </div>
+          <div class="fl" role="group" aria-label="Room type">
+            <span class="fh">Room Type</span>
+            <label for="t0">All</label>
+            <label for="t1">Single</label>
+            <label for="t2">Shared</label>
+            <label for="t3">Self-contained</label>
+            <label for="t4">Hostel</label>
+          </div>
+          <div class="fl" role="group" aria-label="Price range">
+            <span class="fh">Price Range</span>
+            <label for="p0">Any</label>
+            <label for="p1">Under Le 1,000,000</label>
+            <label for="p2">Le 1,000,000 to 2,000,000</label>
+            <label for="p3">Above Le 2,000,000</label>
+          </div>
+          <div class="rows" style="margin-top:18px">
+            <article class="card s mi u">
+              <img src="images/single.jpg" alt="Single Room">
+              <h3>Single Room</h3>
+              <p>Near University, Freetown</p>
+              <p class="price">Le 1,500,000 / month</p>
+              <a class="btn o" href="details.html">View Details</a>
+            </article>
+            <article class="card h mi u">
+              <img src="images/shared.jpg" alt="Shared Room">
+              <h3>Shared Room</h3>
+              <p>Near University, Freetown</p>
+              <p class="price">Le 1,000,000 / month</p>
+              <a class="btn o" href="details.html">View Details</a>
+            </article>
+            <article class="card c hi u">
+              <img src="images/selfc.jpg" alt="Self-Contained Room">
+              <h3>Self-Contained Room</h3>
+              <p>Near University, Freetown</p>
+              <p class="price">Le 2,500,000 / month</p>
+              <a class="btn o" href="details.html">View Details</a>
+            </article>
+            <article class="card d lo u">
+              <img src="images/hostel.jpg" alt="Student Hostel">
+              <h3>Student Hostel</h3>
+              <p>Near University, Freetown</p>
+              <p class="price">Le 800,000 / month</p>
+              <a class="btn o" href="details.html">View Details</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer: quick links, about, contact and social links -->
+    <footer>
+      <div class="w">
+        <div class="fg4">
+          <div>
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="accommodation.html">Accommodation Listing</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="account.html">Student Account</a>
+          </div>
+          <div>
+            <h4>About</h4>
+            <a href="about.html">Our Story</a>
+            <a href="details.html">Accommodation Details</a>
+            <a href="details.html#booking">Request Booking</a>
+            <a href="contact.html#map">Location &amp; Map</a>
+            <a href="contact.html#faqs">FAQs</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <p>Phone: +232 76 123 456</p>
+            <p>Email: info@studentaccom.sl</p>
+            <p>12 University Road, Freetown, Sierra Leone</p>
+            <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+          </div>
+          <div>
+            <h4>Social Link</h4>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">Instagram</a>
+            <a href="#">X</a>
+          </div>
+        </div>
+        <p class="copy">&copy; 2026 StudentStay Freetown &middot; Student project prototype. Sample images are for illustration only.</p>
+      </div>
+    </footer>
+  </body>
+</html>

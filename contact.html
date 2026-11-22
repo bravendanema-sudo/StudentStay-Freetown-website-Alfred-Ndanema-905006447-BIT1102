@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- StudentStay Freetown | Contact Us | HTML and CSS only (no JavaScript) -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact Us | StudentStay Freetown</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Header: logo and main menu -->
+    <header>
+      <div class="w">
+        <a class="logo" href="index.html">Student<b>Stay</b></a>
+        <!-- Main menu (the current page is highlighted in yellow) -->
+        <nav aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="accommodation.html">Accommodation Listing</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="contact.html" class="on" aria-current="page">Contact Us</a>
+          <a href="account.html">Student Account</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Main content of the page -->
+    <main>
+      <!-- Banner: Contact Us -->
+      <div class="hero">
+        <div class="w">
+          <h1>Contact Us</h1>
+          <p>Have questions or need help? Get in touch with us.</p>
+        </div>
+      </div>
+      <!-- Section: Contact Information -->
+      <section>
+        <div class="w split top">
+          <!-- Form (the Send button opens the email app, no JavaScript needed) -->
+          <form class="box" action="mailto:info@studentaccom.sl" method="post" enctype="text/plain">
+            <label for="n" style="margin-top:0">Full Name</label>
+            <input id="n" name="name" placeholder="Enter your full name" required>
+            <label for="e">Email Address</label>
+            <input id="e" name="email" type="email" placeholder="Enter your email address" required>
+            <label for="s">Subject</label>
+            <select id="s" name="subject">
+              <option>General question</option>
+              <option>Booking help</option>
+              <option>Report a listing</option>
+              <option>Landlord enquiry</option>
+            </select>
+            <label for="m">Message</label>
+            <textarea id="m" name="message" rows="4" placeholder="Type your message here" required></textarea>
+            <p style="margin-top:14px"><button class="btn" type="submit" style="width:100%">Send Message</button></p>
+          </form>
+          <div class="box">
+            <h2 style="margin:0">Contact Information</h2>
+            <table>
+              <tr>
+                <td>Address</td>
+                <td>12 University Road, Freetown, Sierra Leone</td>
+              </tr>
+              <tr>
+                <td>Phone</td>
+                <td>+232 76 123 456<br>+232 88 987 654</td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>info@studentaccom.sl</td>
+              </tr>
+              <tr>
+                <td>Opening Hours</td>
+                <td>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat - Sun: 9:00 AM - 4:00 PM</td>
+              </tr>
+              <tr>
+                <td>Follow Us</td>
+                <td><a href="#">Facebook</a>, <a href="#">WhatsApp</a>, <a href="#">Instagram</a>, <a href="#">X</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Location &amp; Map -->
+      <section class="alt" id="map">
+        <div class="w">
+          <h2>Location &amp; Map</h2>
+          <div class="map">
+            <span class="pin"></span>
+            <p style="margin:0"><b>12 University Road, Freetown, Sierra Leone</b></p>
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=12+University+Road+Freetown+Sierra+Leone" target="_blank" rel="noopener">Open in Google Maps</a>
+          </div>
+        </div>
+      </section>
+      <!-- Section: FAQs -->
+      <section id="faqs">
+        <div class="w">
+          <h2>FAQs</h2>
+          <details open>
+            <summary>How do I find a room?</summary>
+            <p>Use the search on the home page or open Accommodation Listing. You can filter by location, room type and price.</p>
+          </details>
+          <details open>
+            <summary>Can I see a room before I pay?</summary>
+            <p>Yes. Always visit the room and meet the landlord first. Ask for a receipt for every payment.</p>
+          </details>
+          <details open>
+            <summary>How do I request a booking?</summary>
+            <p>Open a room and press Request Booking. Fill in your details and the dates you want.</p>
+          </details>
+          <details open>
+            <summary>How do I make an account?</summary>
+            <p>Go to Student Account and choose Register.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+    <!-- Footer: quick links, about, contact and social links -->
+    <footer>
+      <div class="w">
+        <div class="fg4">
+          <div>
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="accommodation.html">Accommodation Listing</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="account.html">Student Account</a>
+          </div>
+          <div>
+            <h4>About</h4>
+            <a href="about.html">Our Story</a>
+            <a href="details.html">Accommodation Details</a>
+            <a href="details.html#booking">Request Booking</a>
+            <a href="contact.html#map">Location &amp; Map</a>
+            <a href="contact.html#faqs">FAQs</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <p>Phone: +232 76 123 456</p>
+            <p>Email: info@studentaccom.sl</p>
+            <p>12 University Road, Freetown, Sierra Leone</p>
+            <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+          </div>
+          <div>
+            <h4>Social Link</h4>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">Instagram</a>
+            <a href="#">X</a>
+          </div>
+        </div>
+        <p class="copy">&copy; 2026 StudentStay Freetown &middot; Student project prototype. Sample images are for illustration only.</p>
+      </div>
+    </footer>
+  </body>
+</html>
