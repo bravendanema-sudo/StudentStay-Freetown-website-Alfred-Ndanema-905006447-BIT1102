@@ -1,0 +1,561 @@
+/* Colour variables used across the whole site */
+:root {
+  --g: #1f3d2f;
+  --g2: #e9eee6;
+  --gold: #b07d3a;
+  --yel: #ffd43b;
+  --bg: #f7f4ec;
+  --ink: #1c2a24;
+  --mut: #55635b;
+  --line: #d9ded5;
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font: 16px/1.55 system-ui,"Segoe UI",Arial,sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+a {
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.w {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 32px;
+}
+
+/* Keyboard focus outline */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Header and main menu */
+header {
+  background: var(--g);
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+header .w {
+  max-width: none;
+  padding: 14px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  font: italic 700 1.5rem Georgia,"Times New Roman",serif;
+  color: #fff;
+  border: 1.5px solid #d3a964;
+  border-radius: 9px;
+  padding: 3px 14px;
+  line-height: 1.25;
+  text-decoration: none;
+}
+.logo b {
+  font-weight: 700;
+}
+nav a {
+  color: #fff;
+  font-weight: 700;
+  font-size: .88rem;
+  margin-left: 26px;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+nav a.on {
+  color: var(--yel);
+  border-color: var(--yel);
+}
+nav a:hover {
+  color: var(--yel);
+}
+
+/* Page title banner */
+.hero {
+  background: var(--g);
+  color: #fff;
+  padding: 26px 0 30px;
+}
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.8rem,4vw,2.5rem);
+  line-height: 1.15;
+}
+.hero p {
+  margin: 8px 0 0;
+  color: #dbe6df;
+  font-size: 1.05rem;
+}
+
+/* Two-column layout */
+.split {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+.top {
+  align-items: start;
+}
+
+/* Sections and headings */
+section {
+  padding: 30px 0;
+}
+section.alt {
+  background: var(--g2);
+}
+h2 {
+  font-size: 1.6rem;
+  margin: 0 0 16px;
+}
+h3 {
+  margin: 10px 0 2px;
+}
+
+/* Heading with a link on the right */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.head a {
+  font-weight: 700;
+  color: var(--g);
+}
+
+/* Grids (2, 3 and 4 columns) */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+.g3 {
+  grid-template-columns: repeat(3,1fr);
+}
+.g4 {
+  grid-template-columns: repeat(4,1fr);
+}
+.g2 {
+  grid-template-columns: repeat(2,1fr);
+}
+
+/* Cards and boxes */
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.card h3 {
+  margin: 10px 0 2px;
+}
+.card p {
+  margin: 2px 0;
+  color: var(--mut);
+}
+.card .price {
+  font-weight: 700;
+  color: var(--g);
+}
+.box {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px;
+}
+.box h3 {
+  margin: 0 0 4px;
+}
+.box p {
+  margin: 0;
+  color: var(--mut);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: var(--g);
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+.btn:hover {
+  background: #142a20;
+}
+.btn.o {
+  background: #fff;
+  color: var(--g);
+  border: 1px solid var(--g);
+}
+.card .btn {
+  margin-top: 8px;
+}
+
+/* Forms */
+form label {
+  display: block;
+  font-weight: 600;
+  margin: 12px 0 4px;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b9c1b6;
+  border-radius: 8px;
+  font: inherit;
+  background: #fff;
+}
+
+/* Search bar on the Home page */
+.search {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr) auto;
+  gap: 14px;
+  align-items: end;
+  margin-top: -26px;
+  position: relative;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+}
+.search label {
+  margin-top: 0;
+}
+
+/* Listing rows with a photo on the left */
+.rows {
+  display: grid;
+  gap: 16px;
+}
+.rows .card {
+  display: grid;
+  grid-template-columns: 300px 1fr auto;
+  gap: 22px;
+  align-items: center;
+  padding: 12px;
+}
+.rows .card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+/* Filters (CSS only, using hidden radio buttons) */
+.w>input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+.fl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.fh {
+  font-weight: 700;
+  color: var(--mut);
+  min-width: 100px;
+}
+.fl label {
+  margin: 0;
+  padding: 6px 16px;
+  border: 1px solid var(--g);
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--g);
+  background: #fff;
+}
+#t0:checked~.fl label[for=t0],
+#t1:checked~.fl label[for=t1],
+#t2:checked~.fl label[for=t2],
+#t3:checked~.fl label[for=t3],
+#t4:checked~.fl label[for=t4],
+#p0:checked~.fl label[for=p0],
+#p1:checked~.fl label[for=p1],
+#p2:checked~.fl label[for=p2],
+#p3:checked~.fl label[for=p3],
+#l0:checked~.fl label[for=l0],
+#l1:checked~.fl label[for=l1] {
+  background: var(--g);
+  color: #fff;
+}
+#t1:checked~.rows .card:not(.s),
+#t2:checked~.rows .card:not(.h),
+#t3:checked~.rows .card:not(.c),
+#t4:checked~.rows .card:not(.d),
+#p1:checked~.rows .card:not(.lo),
+#p2:checked~.rows .card:not(.mi),
+#p3:checked~.rows .card:not(.hi),
+#l1:checked~.rows .card:not(.u) {
+  display: none;
+}
+
+/* Login / Register tabs (CSS only) */
+.tabs {
+  position: relative;
+}
+.tabs>input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+.tabs .tl {
+  display: flex;
+  gap: 8px;
+}
+.tabs .tl label {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+#a1:checked~.tl label[for=a1],
+#a2:checked~.tl label[for=a2] {
+  background: var(--g);
+  color: #fff;
+}
+.pa,
+.pb {
+  display: none;
+}
+#a1:checked~.pa,
+#a2:checked~.pb {
+  display: block;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line);
+}
+td:first-child {
+  color: var(--mut);
+  width: 42%;
+}
+table.rt th {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 2px solid var(--g);
+}
+table.rt td {
+  width: auto;
+  color: var(--ink);
+  padding: 9px 8px;
+}
+
+/* FAQs */
+details {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin-bottom: 8px;
+}
+summary {
+  font-weight: 700;
+  cursor: pointer;
+}
+details p {
+  margin: 6px 0 0;
+  color: var(--mut);
+}
+
+/* Location and map block */
+.map {
+  background: linear-gradient(#cfd8c8 1px,transparent 1px) 0 0/40px 40px,linear-gradient(90deg,#cfd8c8 1px,transparent 1px) 0 0/40px 40px,#e9eee6;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  padding: 16px;
+}
+.pin {
+  width: 28px;
+  height: 28px;
+  background: #b3261e;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  position: relative;
+  display: block;
+}
+.pin::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  top: 9px;
+  left: 9px;
+}
+
+/* Footer */
+footer {
+  background: var(--g);
+  color: #cfdcd4;
+  text-align: center;
+  padding: 20px 0;
+  font-size: .92rem;
+}
+footer .fn {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0 0 6px;
+}
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+footer a:hover {
+  color: var(--yel);
+}
+footer p {
+  margin: 6px 0 0;
+}
+
+/* Tablet and phone layout */
+@media(max-width: 860px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+  .g3,
+  .g4 {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .search {
+    grid-template-columns: 1fr 1fr;
+  }
+  .rows .card {
+    grid-template-columns: 1fr;
+  }
+  header .w {
+    padding: 12px 16px;
+  }
+  nav a {
+    margin: 0 14px 0 0;
+  }
+}
+@media(max-width: 520px) {
+  .g2,
+  .g3,
+  .g4,
+  .search {
+    grid-template-columns: 1fr;
+  }
+}
+.rows .card img {
+  grid-column: 1;
+  grid-row: 1/4;
+}
+.rows .card h3,
+.rows .card p {
+  grid-column: 2;
+  margin: 0;
+}
+.rows .card .btn {
+  grid-column: 3;
+  grid-row: 1/4;
+  margin: 0;
+  align-self: center;
+}
+@media(max-width: 860px) {
+  .rows .card>* {
+    grid-column: 1!important;
+    grid-row: auto!important;
+  }
+}
+
+/* Footer columns */
+.fg4 {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 28px;
+  text-align: left;
+}
+.fg4 h4 {
+  color: #fff;
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+.fg4 a {
+  display: block;
+  margin: 0 0 5px;
+}
+.fg4 p {
+  margin: 0 0 5px;
+}
+footer .copy {
+  border-top: 1px solid #2f5646;
+  margin-top: 16px;
+  padding-top: 12px;
+  text-align: center;
+}
+@media(max-width: 860px) {
+  .fg4 {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media(max-width: 520px) {
+  .fg4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Removes the small gap that appears between menu links when each link is on its own line of code */
+header nav {
+  font-size: 0;
+}
+header nav a {
+  font-size: 0.88rem;
+}
